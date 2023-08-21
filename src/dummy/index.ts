@@ -1,3 +1,4 @@
 import { DataHeader } from "./DataHeader/DataHeader";
+import { DataProject } from "./DataProject/DataProject";
 
-export { DataHeader };
+export { DataHeader, DataProject };
