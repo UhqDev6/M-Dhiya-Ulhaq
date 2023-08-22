@@ -28,16 +28,33 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I am a graduate of the Indonesian Muslim University with a
-        specialization as a Frontend Web Developer. I have experience in
-        building attractive and responsive user interfaces using the latest
-        technologies such as ReactJS and its Ecosystem. Also, I`m always
-        passionate about finding new ways to improve website quality and
-        performance. I believe that strong technical ability must be accompanied
-        by good interpersonal skills, so I always strive to be a collaborative
-        team member, communicate clearly, and be quality results oriented. I`m
-        excited to continue learning and developing my skills, and I look
-        forward to contributing to building an impressive and useful product.
+        <span className="italic font-bold">I`m</span> a graduate of the{" "}
+        <span className="font-semibold">Indonesian Muslim University</span> with
+        a specialization as a{" "}
+        <span className="font-semibold italic underline">
+          Frontend Web Developer
+        </span>
+        . I have experience in building attractive and responsive user
+        interfaces using the latest technologies such as{" "}
+        <span className="font-semibold italic underline">
+          ReactJS and its Ecosystem
+        </span>
+        . Also,
+        <span className="italic font-bold">I`m</span> always passionate about
+        finding new ways to improve website quality and performance. I believe
+        that strong <span className="italic">technical ability</span> must be
+        accompanied by good <span className="italic">interpersonal skills</span>
+        , so I always strive to be a
+        <span className="italic">
+          collaborative team member, communicate clearly, and be quality results
+          oriented
+        </span>
+        . <span className="italic font-bold">I`m</span> excited to{" "}
+        <span className="font-semibold">
+          continue learning and developing my skills
+        </span>
+        , and I look forward to contributing to building an impressive and
+        useful product.
       </p>
       <p></p>
     </motion.section>
