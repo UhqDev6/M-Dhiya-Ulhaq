@@ -8,23 +8,23 @@ import React, { useRef } from "react";
 type ProjectDataProps = (typeof DataProject)[number];
 
 export default function Project() {
-  const refe = useRef<HTMLDivElement>(null);
+  const references = useRef<HTMLDivElement>(null);
   const { ref } = useSectionInView("Projects", 0.5);
   const { scrollYProgress } = useScroll({
-    target: refe,
+    target: references,
     offset: ["0 1", "1.33 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-24">
+    <section ref={ref} id="projects" className="scroll-mt-24 mb-28">
       <SectionHeading>My Project</SectionHeading>
       <div>
         {DataProject?.map((project: ProjectDataProps) => (
           <React.Fragment key={project?.id}>
             <motion.div
-              ref={ref}
+              ref={references}
               style={{
                 scale: scaleProgress,
                 opacity: opacityProgress,

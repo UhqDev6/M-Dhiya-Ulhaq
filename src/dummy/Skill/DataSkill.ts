@@ -1,0 +1,17 @@
+export const DataSkill = [
+  "Javascript",
+  "Typescript",
+  "ReactJS",
+  "NextJS",
+  "React Native",
+  "Tailwind Css",
+  "Material UI",
+  "Styled Components",
+  "React Query",
+  "Bootstrap",
+  "Rest API",
+  "Framer Motion",
+  "Git",
+  "Github",
+  "Gitlab",
+] as const;

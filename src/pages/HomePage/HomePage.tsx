@@ -1,4 +1,4 @@
-import { About, Header, Intro, Project } from "@/components";
+import { About, Header, Intro, Project, Skill } from "@/components";
 import { SectionDevier } from "@/components/atoms";
 import { ActiveSectionContext } from "@/contex";
 import { Inter } from "next/font/google";
@@ -17,6 +17,7 @@ export default function HomePage() {
           <SectionDevier />
           <About />
           <Project />
+          <Skill />
         </div>
       </ActiveSectionContext>
     </div>
