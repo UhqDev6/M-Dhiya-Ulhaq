@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en" className="!scroll-smooth">
       <Head>
         <meta
-          name="M Dhiya Ulhaq"
+          name="description"
           content="Biography Muhammad Dhiya Ulhaq"
           key="Frontend Develper"
         />
