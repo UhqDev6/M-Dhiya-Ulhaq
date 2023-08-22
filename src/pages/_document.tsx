@@ -7,7 +7,7 @@ export default function Document() {
         <meta
           name="description"
           content="Biography Muhammad Dhiya Ulhaq"
-          key="Frontend Develper"
+          key="Frontend Developer"
         />
       </Head>
       <body>

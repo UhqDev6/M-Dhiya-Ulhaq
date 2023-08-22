@@ -9,7 +9,7 @@ export default function Home() {
         <meta
           name="description"
           content="Biography Muhammad Dhiya Ulhaq"
-          key="Frontend Develper"
+          key="Frontend Developer"
         />
       </Head>
       <HomePage />
