@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>M. Dhiya Ulhaq</title>
         <meta
-          name="M Dhiya Ulhaq"
+          name="description"
           content="Biography Muhammad Dhiya Ulhaq"
           key="Frontend Develper"
         />
