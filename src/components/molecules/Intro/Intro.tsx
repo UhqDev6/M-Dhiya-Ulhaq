@@ -147,6 +147,7 @@ export default function Intro() {
           "
           href="https://www.linkedin.com/in/uhqdev/"
           target="_blank"
+          title="Linkedin"
         >
           <BsLinkedin />
         </a>
@@ -171,6 +172,7 @@ export default function Intro() {
           "
           href="https://github.com/UhqDev6"
           target="_blank"
+          title="Github"
         >
           <BsGithub />
         </a>
@@ -195,6 +197,7 @@ export default function Intro() {
           "
           href="https://www.instagram.com/uhqdev"
           target="_blank"
+          title="Instagram"
         >
           <BsInstagram />
         </a>
