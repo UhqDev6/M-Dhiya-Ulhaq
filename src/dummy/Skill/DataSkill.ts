@@ -14,4 +14,5 @@ export const DataSkill = [
   "Git",
   "Github",
   "Gitlab",
+  "Figma",
 ] as const;
