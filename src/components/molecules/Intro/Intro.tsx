@@ -65,7 +65,7 @@ export default function Intro() {
           Hi, I`m M. Dhiya Ulhaq.
         </span>{" "}
         as <span className="font-bold">Frontend Developer</span> with{" "}
-        <span className="font-bold">3 years</span> of experience. I enjoy
+        <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">
           Javascript, Typescript & Reactjs, Nextjs
