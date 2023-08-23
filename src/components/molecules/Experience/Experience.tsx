@@ -17,6 +17,7 @@ export default function Experience() {
       className="
         mb-28 
         scroll-mt-28
+        sm:mb-40
         w-full
       "
     >

@@ -10,9 +10,11 @@ import {
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { useSectionInView } from "@/hooks";
+import { useActiveSectionContext } from "@/contex/ActiveSectionContext/ActiveSectionContext";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { active, setActive, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -97,6 +99,10 @@ export default function Intro() {
             transition
             group
           "
+          onClick={() => {
+            setActive("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
