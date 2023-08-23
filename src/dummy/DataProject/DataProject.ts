@@ -1,4 +1,6 @@
-import dashboardImg from "../../../public/dashboar.png";
+import dashboarImg from "../../../public/dashboar.png";
+import dashboardImg from "../../../public/dashboard.png";
+import talkImg from "../../../public/talk.png";
 export const DataProject = [
   {
     id: 1,
@@ -6,7 +8,7 @@ export const DataProject = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been. ",
     tags: ["Nextjs", "Typescript", "Tailwindcss", "Material UI", "React Query"],
-    imageUrl: dashboardImg,
+    imageUrl: dashboarImg,
   },
   {
     id: 2,
@@ -22,6 +24,6 @@ export const DataProject = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been. ",
     tags: ["Nextjs", "Typescript", "Tailwindcss", "Material UI", "React Query"],
-    imageUrl: dashboardImg,
+    imageUrl: talkImg,
   },
 ] as const;
