@@ -1,2 +1,3 @@
 import ActiveSectionContext from "./ActiveSectionContext/ActiveSectionContext";
-export { ActiveSectionContext };
+import ThemeContext from "./ThemeContextProvider/ThemeContextProvider";
+export { ActiveSectionContext, ThemeContext };

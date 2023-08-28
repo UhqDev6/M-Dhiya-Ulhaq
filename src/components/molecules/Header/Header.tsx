@@ -28,6 +28,9 @@ export default function Header() {
           sm:h-[3.25rem]
           sm:w-[36rem]
           sm:rounded-full
+          dark:bg-gray-950
+          dark:border-black/40
+          dark:bg-opacity-60
         "
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
@@ -72,9 +75,9 @@ export default function Header() {
               <Link
                 href={linkNav.hash}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "text-gray-950": active === linkNav.name,
+                    "text-gray-950 dark:text-gray-200": active === linkNav.name,
                   }
                 )}
                 onClick={() => {
@@ -85,7 +88,7 @@ export default function Header() {
                 {linkNav.name}
                 {linkNav.name === active && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="active"
                     transition={{
                       type: "spring",

@@ -125,6 +125,7 @@ export default function Intro() {
             cursor-pointer
             border
             border-black/10
+            dark:bg-white/10
           "
           href="/CV-Muhammad-Dhiya-Ulhaq.pdf"
           download
@@ -150,6 +151,8 @@ export default function Intro() {
             cursor-pointer
             border
             border-black/10
+            dark:bg-white/10
+            dark:text-white/60
           "
           href="https://www.linkedin.com/in/uhqdev/"
           target="_blank"
@@ -175,6 +178,8 @@ export default function Intro() {
             cursor-pointer
             border
             border-black/10
+            dark:bg-white/10
+            dark:text-white/60
           "
           href="https://github.com/UhqDev6"
           target="_blank"
@@ -200,6 +205,8 @@ export default function Intro() {
             cursor-pointer
             border
             border-black/10
+            dark:bg-white/10
+            dark:text-white/60
           "
           href="https://www.instagram.com/uhqdev"
           target="_blank"

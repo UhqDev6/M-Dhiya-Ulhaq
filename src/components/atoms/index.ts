@@ -1,2 +1,3 @@
 import SectionDevier from "./SectionDevider/SectionDevier";
-export { SectionDevier };
+import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
+export { SectionDevier, ThemeSwitch };

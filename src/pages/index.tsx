@@ -1,5 +1,8 @@
 import Head from "next/head";
 import HomePage from "./HomePage/HomePage";
+import { ThemeSwitch } from "@/components/atoms";
+import { ActiveSectionContext } from "@/contex";
+import ThemeContextProvider from "@/contex/ThemeContextProvider/ThemeContextProvider";
 
 export default function Home() {
   return (
@@ -12,7 +15,12 @@ export default function Home() {
           key="Frontend Developer"
         />
       </Head>
-      <HomePage />
+      <ThemeContextProvider>
+        <ActiveSectionContext>
+          <HomePage />
+          <ThemeSwitch />
+        </ActiveSectionContext>
+      </ThemeContextProvider>
     </main>
   );
 }
