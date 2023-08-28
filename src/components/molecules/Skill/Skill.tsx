@@ -51,6 +51,8 @@ export default function Skill() {
               px-5
               py-3
               rounded-xl
+              dark:bg-white/10
+              dark:text-white/80
             "
             key={index}
             variants={fadeInAnimationVariants}
