@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
 type IPropsThemeContext = {
@@ -51,4 +51,14 @@ export default function ThemeContextProvider(props: IPropsThemeContext) {
       {children}
     </ThemeContext.Provider>
   );
+}
+
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (context === null) {
+    throw new Error("useTheme must be used whitin a themeProvider");
+  }
+
+  return context;
 }
