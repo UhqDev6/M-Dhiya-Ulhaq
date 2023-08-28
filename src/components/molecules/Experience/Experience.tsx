@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/atoms/SectionHeading/SectionHeading";
+import { useTheme } from "@/contex/ThemeContextProvider/ThemeContextProvider";
 import { DataExperience } from "@/dummy";
 import { useSectionInView } from "@/hooks";
 import React from "react";
@@ -10,6 +11,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.5);
+  const { theme } = useTheme();
   return (
     <section
       ref={ref}
