@@ -90,7 +90,7 @@ export default function Intro() {
             flex 
             items-center 
             gap-2 
-            rounded-full
+            rounded-xl
             outline-none
             focus:scale-110
             hover:scale-110
@@ -115,7 +115,7 @@ export default function Intro() {
             flex 
             items-center 
             gap-2 
-            rounded-full
+            rounded-xl
             outline-none
             focus:scale-110
             hover:scale-110
