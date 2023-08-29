@@ -32,20 +32,28 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:uhqdev@gmail.com">
           uhqdev@gmail.com
         </a>{" "}
         or through this from.
       </p>
-      <form className="mt-10 flex flex-col" onSubmit={handleSubmit}>
+      <form
+        className="mt-10 flex flex-col dark:text-black"
+        onSubmit={handleSubmit}
+      >
         <input
           className="
             h-14
             rounded-lg
             borderBlack
             p-4
+            dark:bg-white
+            dark:bg-opacity-80
+            dark:focus:bg-opacity-100
+            transition-all
+            dark:outline-none
           "
           type="email"
           placeholder="You`re email"
@@ -60,6 +68,11 @@ export default function Contact() {
             border
             borderBlack
             p-4
+            dark:bg-white
+            dark:bg-opacity-80
+            dark:focus:bg-opacity-100
+            transition-all
+            dark:outline-none
           "
           placeholder="You`re message"
           required
@@ -74,7 +87,7 @@ export default function Contact() {
             w-[8rem]
             bg-gray-900
             text-white
-            rounded-full
+            rounded-xl
             outline-none
             transition-all
             items-center
@@ -85,6 +98,8 @@ export default function Contact() {
             hover:scale-110
             active:scale-105
             hover:bg-gray-950
+            dark:bg-opacity-10
+            dark:bg-white
           "
         >
           Submit{" "}

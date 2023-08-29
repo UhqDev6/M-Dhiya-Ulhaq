@@ -37,18 +37,22 @@ export default function Experience() {
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid #9ca3af",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255,255,255,0.",
               }}
               date={experience.date}
               icon={experience.icon}
               iconStyle={{
-                background: "white",
+                background:
+                  theme === "light" ? "white" : "rgba(255,255,255,0.15)",
                 fontSize: "1rem",
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
               <p className="font-normal !mt-0">{experience.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {experience.description}
               </p>
             </VerticalTimelineElement>
