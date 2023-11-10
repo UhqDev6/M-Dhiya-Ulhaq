@@ -13,3 +13,7 @@ html.dark {
 .borderBlack {
   @apply border border-black/10
 }
+
+.linkButton {
+  transition: transform 0.2s ease-in-out; /* Menambahkan efek transisi selama 0.2 detik dengan fungsi timing ease-in-out */
+}
