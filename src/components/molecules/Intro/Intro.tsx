@@ -81,7 +81,8 @@ export default function Intro() {
         }}
       >
         <Link
-          href="#contact"
+          // href="#contact"
+          href="https://wepik.com/share/9a9349a0-21e0-4607-a50b-71704934fe50#rs=link"
           className="
             bg-gray-900 
             text-white 
@@ -99,12 +100,12 @@ export default function Intro() {
             transition
             group
           "
-          onClick={() => {
-            setActive("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
+          // onClick={() => {
+          //   setActive("Contact");
+          //   setTimeOfLastClick(Date.now());
+          // }}
         >
-          Contact me here{" "}
+          Going to My Persentation{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
