@@ -23,7 +23,7 @@ const PresentationModal = (props: IProps) => {
 
   const handleConfirm = () => {
     // Perform password validation logic here
-    if (password === "mmc") {
+    if (password === "pahlawan") {
       onConfirm();
     } else {
       alert("Incorrect password. Please try again.");
