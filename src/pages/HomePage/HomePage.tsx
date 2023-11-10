@@ -2,6 +2,7 @@ import {
   About,
   Contact,
   Experience,
+  Footer,
   Header,
   Intro,
   Project,
@@ -30,6 +31,7 @@ export default function HomePage() {
             <Skill />
             <Experience />
             <Contact />
+            <Footer />
           </div>
           <ThemeSwitch />
         </ActiveSectionContext>
