@@ -17,42 +17,42 @@ type IProps = {
   onClose: () => void;
   onConfirm: () => void;
 };
-const PresentationModal = (props: IProps) => {
-  const { isOpen, onClose, onConfirm } = props;
-  const [password, setPassword] = useState("");
+// const PresentationModal = (props: IProps) => {
+//   const { isOpen, onClose, onConfirm } = props;
+//   const [password, setPassword] = useState("");
 
-  const handleConfirm = () => {
-    // Perform password validation logic here
-    if (password === "coto") {
-      onConfirm();
-    } else {
-      alert("Incorrect password. Please try again 🤪😜😝😛");
-    }
-  };
+//   const handleConfirm = () => {
+//     // Perform password validation logic here
+//     if (password === "coto") {
+//       onConfirm();
+//     } else {
+//       alert("Incorrect password. Please try again 🤪😜😝😛");
+//     }
+//   };
 
-  return (
-    <div className={`modal ${isOpen ? "visible" : "hidden"}`}>
-      <div className="modal-content">
-        <span className="close cursor-pointer" onClick={onClose}>
-          &times;
-        </span>
-        <p>Enter password 🤫</p>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="*******"
-        />
-        <button
-          className="bg-black rounded-xl text-white p-2"
-          onClick={handleConfirm}
-        >
-          Confirm
-        </button>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className={`modal ${isOpen ? "visible" : "hidden"}`}>
+//       <div className="modal-content">
+//         <span className="close cursor-pointer" onClick={onClose}>
+//           &times;
+//         </span>
+//         <p>Enter password 🤫</p>
+//         <input
+//           type="password"
+//           value={password}
+//           onChange={(e) => setPassword(e.target.value)}
+//           placeholder="*******"
+//         />
+//         <button
+//           className="bg-black rounded-xl text-white p-2"
+//           onClick={handleConfirm}
+//         >
+//           Confirm
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -140,13 +140,13 @@ export default function Intro() {
         }}
       >
         <Link
-          // href="#contact"
-          onClick={handleModalOpen}
-          href={
-            isPasswordConfirmed
-              ? "https://wepik.com/share/9a9349a0-21e0-4607-a50b-71704934fe50#rs=link"
-              : ""
-          }
+          href="#contact"
+          // onClick={handleModalOpen}
+          // href={
+          //   isPasswordConfirmed
+          //     ? "https://wepik.com/share/9a9349a0-21e0-4607-a50b-71704934fe50#rs=link"
+          //     : ""
+          // }
           className="
             bg-gray-900 
             text-white 
@@ -169,14 +169,14 @@ export default function Intro() {
           //   setTimeOfLastClick(Date.now());
           // }}
         >
-          Going to My Persentation{" "}
+          Contact Me
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <PresentationModal
+        {/* <PresentationModal
           isOpen={isModalOpen}
           onClose={handleModalClose}
           onConfirm={handlePasswordConfirm}
-        />
+        /> */}
         <a
           className="
             bg-white 
